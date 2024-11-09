@@ -1,0 +1,30 @@
+{
+  "name": "weatherly",
+  "version": "1.0.0",
+  "description": "Geo & weather data integration service for real-time environmental insights.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kemal-rov/weatherly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kemal-rov/weatherly/issues"
+  },
+  "homepage": "https://github.com/kemal-rov/weatherly#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "express": "^4.21.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
