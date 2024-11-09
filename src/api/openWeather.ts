@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export const getCurrentWeather = async (cityName: string) => {
   try {
+        
     const response = await axios.get(
       `https://api.openweathermap.org/data/2.5/weather`,
       {
@@ -12,9 +13,10 @@ export const getCurrentWeather = async (cityName: string) => {
         }
       }
     );
+
     return response.data;
   } catch (error) {
-    console.error(`Error fetching current weather for ${cityName}:`, error);
+    console.error(`Error fetching current weather for ${cityName}:\n${error}`);
     throw error;
   }
 };
