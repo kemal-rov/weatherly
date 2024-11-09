@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Geo & weather data integration service for real-time environmental insights.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
