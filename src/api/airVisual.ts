@@ -1,9 +1,8 @@
 import axios from 'axios';
 
-// Function to get Air Quality from AirVisual API using latitude and longitude
 export const getAirQualityByCoordinates = async (latitude: number, longitude: number) => {
   try {
-    console.log(`Attempting to fetch air quality data for coordinates (${latitude}, ${longitude})`);
+
     const response = await axios.get(
       `https://api.airvisual.com/v2/nearest_city`,
       {
@@ -14,7 +13,7 @@ export const getAirQualityByCoordinates = async (latitude: number, longitude: nu
         }
       }
     );
-    console.log(`Received air quality data for coordinates (${latitude}, ${longitude}):`, response.data);
+
     return response.data;
   } catch (error: any) {
     if (error.response) {

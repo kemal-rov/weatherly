@@ -6,7 +6,7 @@ import { getAirQualityAdvice } from '../utils/aqiAdvice.js';
 export const aggregateCityData = async (cityName: string) => {
   try {
     
-    // Fetch geographic details first
+    // Fetch geographic details
     const geoData = await getGeographicDetails(cityName);
     const latitude = parseFloat(geoData.latt);
     const longitude = parseFloat(geoData.longt);
@@ -44,7 +44,6 @@ export const aggregateCityData = async (cityName: string) => {
     };
 
     return unifiedData;
-
   } catch (error) {
     console.error(`Error aggregating data for ${cityName}:\n${error}`);
     throw error;
