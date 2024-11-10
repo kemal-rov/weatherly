@@ -5,7 +5,8 @@ dotenv.config();
 const requiredEnvVariables = [
   'OPENWEATHER_API_KEY',
   'GEOCODE_API_KEY',
-  'AIRVISUAL_API_KEY'
+  'AIRVISUAL_API_KEY',
+  'TIMEZONEDB_API_KEY',
 ];
 
 // Check if all required variables are present
