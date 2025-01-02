@@ -65,6 +65,8 @@ export const aggregateCityData = async (cityName: string) => {
         sunset: new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-GB')
       }
     };
+
+    console.log('unified data:', unifiedData);
     
     return unifiedData;
   } catch (error) {
